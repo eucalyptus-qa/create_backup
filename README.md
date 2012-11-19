@@ -1,3 +1,19 @@
+create_backup
+=============
+
+## Description
+
+Create a backup for installed Eucalptus when built from source
+
+## Procedure
+
+1. Calls the /root/seeds/backup_euca.pl script on each node
+2. Create a dir, /backup/eucalyptus
+3. Copy the entire $EUCA dir to /backup/eucalyptus
+4. Create a backup instances directory /disk1/storage/eucalyptus/backup
+5. Copy all instances from $EUCA_INSTANCES to /disk1/storage/eucalyptus/backup
+
+
 # Eucalyptus Testunit Framework
 
 Eucalyptus Testunit Framework is designed to run a list of test scripts written by Eucalyptus developers.
